@@ -7,7 +7,7 @@ async function foo(){
     let result = await res.json();
     console.log(result)
 for (var i in result){
-    console.log(`Confirmed:${result[i].Confirmed} Active:${result[i].Active} Recovered:${result[i].Recovered} Deaths:${result[i].Deaths}`)
+    console.log(`Date:${[i]} Confirmed:${result[i].Confirmed} Active:${result[i].Active} Recovered:${result[i].Recovered} Deaths:${result[i].Deaths}`)
 }
     }catch(error){
         console.log(error);
